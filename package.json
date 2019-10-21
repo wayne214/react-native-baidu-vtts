@@ -1,17 +1,23 @@
 
 {
-  "name": "react-native-baiduvoice",
+  "name": "react-native-baidu-voice",
   "version": "1.0.0",
-  "description": "",
+  "description": "A ReactNative library can do text to speech",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "react-native-baidu-voice",
+    "百度语音",
+    "react-voice",
+    "voice",
+    "android",
+    "ios"
   ],
-  "author": "",
-  "license": "",
+  "author": "wayne",
+  "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2"
   }
