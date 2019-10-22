@@ -8,12 +8,14 @@
   },
   "keywords": [
     "react-native",
-    "react-native-baidu-voice",
+    "react-native-baidu-vtts",
     "百度语音",
     "react-voice",
     "voice",
     "android",
-    "ios"
+    "ios",
+    "react-native-baidu-voice",
+    "react-native-tts"
   ],
   "author": "wayne",
   "license": "MIT",
