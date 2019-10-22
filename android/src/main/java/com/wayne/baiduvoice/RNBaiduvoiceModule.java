@@ -23,8 +23,15 @@ public class RNBaiduvoiceModule extends ReactContextBaseJavaModule {
   public void initialize() {
     super.initialize();
     utils = new VoiceUtils();
+//    utils.init(getReactApplicationContext());
+  }
+
+  @ReactMethod
+  public void initBaiduTTS(String appId, String appKey, String secretKey) {
+    utils.initOptionParams(appId, appKey, secretKey);
     utils.init(getReactApplicationContext());
   }
+
   @ReactMethod
   public void speak(String msg) {
     utils.speak(msg);
