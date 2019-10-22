@@ -1,6 +1,6 @@
 {
   "name": "react-native-baidu-vtts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A ReactNative library can do text to speech",
   "main": "index.js",
   "scripts": {
