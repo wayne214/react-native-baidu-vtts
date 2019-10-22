@@ -25,11 +25,11 @@ import java.util.Map;
 
 public class VoiceUtils {
     // APPID
-    private String APPID = "";
+    private String APPID = "17583433";
     //ApiKey
-    private String APIKEY = "";
+    private String APIKEY = "ycsP9o7cXTRAbU6E8XIZiSe3";
     //SecretKey
-    private String SECRETKEY = "";
+    private String SECRETKEY = "eNKSZwlGucOKB73GUzaRxhQNXCwFn4Cz";
 
     // TtsMode.MIX; 离在线融合，在线优先； TtsMode.ONLINE 纯在线； 没有纯离线
     protected TtsMode ttsMode = TtsMode.MIX;

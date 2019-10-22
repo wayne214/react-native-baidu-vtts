@@ -7,7 +7,7 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
 
 public class RNBaiduvoiceModule extends ReactContextBaseJavaModule {
-    
+
   private VoiceUtils utils;
 
   public RNBaiduvoiceModule(ReactApplicationContext reactContext) {
