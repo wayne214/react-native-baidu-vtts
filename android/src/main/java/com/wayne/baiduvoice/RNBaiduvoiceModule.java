@@ -7,13 +7,11 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
 
 public class RNBaiduvoiceModule extends ReactContextBaseJavaModule {
-
-  private final ReactApplicationContext reactContext;
+    
   private VoiceUtils utils;
 
   public RNBaiduvoiceModule(ReactApplicationContext reactContext) {
     super(reactContext);
-    this.reactContext = reactContext;
   }
 
   @Override
@@ -25,7 +23,7 @@ public class RNBaiduvoiceModule extends ReactContextBaseJavaModule {
   public void initialize() {
     super.initialize();
     utils = new VoiceUtils();
-    utils.initialTts(reactContext);
+    utils.init(getReactApplicationContext());
   }
   @ReactMethod
   public void speak(String msg) {

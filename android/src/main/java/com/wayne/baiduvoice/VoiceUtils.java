@@ -60,9 +60,13 @@ public class VoiceUtils {
 
         synthesizer.speak(text);
     }
+    // 初始化
+    public void init(Context context) {
+        initialTts(context);
+    }
 
 
-    public void initialTts(Context context) {
+    private void initialTts(Context context) {
         LoggerProxy.printable(true); // 日志打印在logcat中
         // 设置初始化参数
         // 此处可以改为 含有您业务逻辑的SpeechSynthesizerListener的实现类
