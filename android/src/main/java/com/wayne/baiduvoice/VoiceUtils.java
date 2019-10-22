@@ -62,7 +62,7 @@ public class VoiceUtils {
     }
 
 
-    protected void initialTts(Context context) {
+    public void initialTts(Context context) {
         LoggerProxy.printable(true); // 日志打印在logcat中
         // 设置初始化参数
         // 此处可以改为 含有您业务逻辑的SpeechSynthesizerListener的实现类
