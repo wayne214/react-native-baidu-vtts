@@ -2,6 +2,10 @@
 # react-native-baidu-vtts
 This is an React-native library that can do text-to-speech
 
+### Before
+please follow this page [ReactNative集成百度语音合成](https://blog.csdn.net/wayne214/article/details/85045229)
+make setting.
+
 ### notice
 current is only support android, ios coming soon.
 
