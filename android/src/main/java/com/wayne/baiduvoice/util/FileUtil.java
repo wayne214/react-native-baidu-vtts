@@ -2,6 +2,7 @@ package com.wayne.baiduvoice.util;
 
 import android.content.Context;
 import android.content.res.AssetManager;
+import android.os.Build;
 import android.os.Environment;
 
 import java.io.File;
@@ -18,7 +19,13 @@ public class FileUtil {
     // 创建一个临时目录，用于复制临时文件，如assets目录下的离线资源文件
     public static String createTmpDir(Context context) {
         String sampleDir = "baiduTTS";
-        String tmpDir = Environment.getExternalStorageDirectory().toString() + "/" + sampleDir;
+        String tmpDir = "";
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+            tmpDir = context.getExternalFilesDir(sampleDir).getAbsolutePath();
+        } else {
+            tmpDir = Environment.getExternalStorageDirectory().toString() + "/" + sampleDir;
+        }
+
         if (!FileUtil.makeDir(tmpDir)) {
             tmpDir = context.getExternalFilesDir(sampleDir).getAbsolutePath();
             if (!FileUtil.makeDir(sampleDir)) {

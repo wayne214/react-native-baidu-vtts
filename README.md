@@ -54,9 +54,9 @@ class App extends Component{
 
     componentDidMount() {
     	// 填写百度语音官网申请的appid, apikey, secretkey
-    	const String appid = ''
-    	const String apikey = ''
-    	const String secretkey = ''
+    	const appid = ''
+    	const apikey = ''
+    	const secretkey = ''
         RNBaiduvoice.initBaiduTTS(appid,apikey,secretkey)
     }
 
